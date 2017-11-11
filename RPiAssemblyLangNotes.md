@@ -19,6 +19,7 @@ Development here was done on a **Raspberry Pi 3** with an **BCM 2836 ARM v8** pr
 * **#** - the hash sign is used to prefix an immediate value (a constant that is part of the instruction).  For example, **mov r7,#1**
 * **@** - used to designate a comment in the source code
 * **MSB** - Most Significant Bit - on a 32-bit ARM processor this is bit 31.  An overflow of this bit causes the **carry flag** to be set
+* **Word-aligned** - the natural alignment of the 32-bit ARM.  Memory addresses that are word-aligned are divisible by 4.
 
 # Assemble and Link Commands
 
@@ -48,6 +49,29 @@ Data Type | Bits | Bytes
 ----------|------|-------
 Byte      | 8    | 1
 Word      | 32   | 4
+
+# Registers
+
+On the 32-bit ARM processor there are 16 general registers that are 32-bits (4 bytes) in length.  Registers **R0-R12** are available for any use, while registers **R13-15** have special uses.
+
+Register | Purpose
+---------|------------------
+R0       | General Use
+R1       | General Use
+R2       | General Use
+R3       | General Use
+R4       | General Use
+R5       | General Use
+R6       | General Use
+R7       | General Use
+R8       | General Use
+R9       | General Use
+R10      | General Use
+R11      | General Use
+R12      | General Use
+R13      | Stack Pointer
+R14      | Link Register
+R15      | Program Counter
 
 # Examples
 
