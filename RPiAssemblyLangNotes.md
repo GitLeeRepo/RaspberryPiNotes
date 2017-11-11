@@ -6,7 +6,7 @@ Assmebly Language notes for the Raspberry Pi ARM processor running the Raspbian 
 
 ## Books
 
-* [Raspberry Pi Assembly Language RASPBIAN Beginners: Hands On Guide](http://tinyurl.com/y9tpnz5q)
+* [Raspberry Pi Assembly Language RASPBIAN Beginners: Hands On Guide](https://www.amazon.com/Raspberry-Assembly-Language-RASPBIAN-Beginners/dp/1492135283/ref=sr_1_1?ie=UTF8&qid=1510393408&sr=8-1&keywords=raspberry+pi+assembly+language+raspbian+beginners)
 
 ## YouTube Videos
 
