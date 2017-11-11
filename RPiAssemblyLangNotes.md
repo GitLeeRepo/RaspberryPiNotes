@@ -72,6 +72,19 @@ R12      | General Use
 R13      | Stack Pointer
 R14      | Link Register
 R15      | Program Counter
+CPSR     | Status Register
+
+## Status Flags
+
+Bits 28-31 (the most significant bits) of the Status Register contain the following flags
+
+Bit | Flag | Description
+----|------|------------
+28  | V    | Overflow
+29  | C    | Carry
+30  | Z    | Zero
+31  | N    | Negative
+
 
 # Examples
 
