@@ -2,6 +2,8 @@
 
 Assmebly Language notes for the Raspberry Pi ARM processor running the Raspbian Stretch OS
 
+Development here was done on a **Raspberry Pi 3** with an **BCM 2836 ARM v8** processor, which is an **SOC - System on a Chip** architecture.  It is a 1.2GHz chip with four ARM Cortex A53 cores.
+
 # References
 
 ## Books
