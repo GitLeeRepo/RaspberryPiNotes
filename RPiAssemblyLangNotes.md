@@ -4,6 +4,10 @@ Assmebly Language notes for the Raspberry Pi ARM processor running the Raspbian 
 
 # References
 
+## Books
+
+* [Raspberry Pi Assembly Language RASPBIAN Beginners: Hands On Guide](http://tinyurl.com/y9tpnz5q)
+
 ## YouTube Videos
 
 * [Assembly Language](https://www.youtube.com/watch?v=ViNnfoE56V8) - YouTube video series by Derek Banas on Raspberry Pi ARM assembly language
