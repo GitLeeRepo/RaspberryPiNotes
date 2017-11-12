@@ -88,7 +88,9 @@ Bit | Flag | Description
 
 # Examples
 
-## Simple Program that sets return status and exits using a system call
+## Hello World
+
+Demonstrates using system function **swi 0** to write to the terminal and to exit the program, depending on the value of **r7**. It also shows the loading of an address of a string in memory.  Note that unlike Intel x86 assembler the **\n** can be used for newline (instead of adding a 0xa byte) and you don't have to explicitly terminate the string with a null (0x0).
 
 ```asm
 .text
@@ -96,7 +98,19 @@ Bit | Flag | Description
 .global _start
 
 _start:
-        mov r0,#21         @ return value
-        mov r7,#1          @ exit to terminal option
-        swi 0              @ Raspbian exit system call
+    mov r7,#4           @ write to terminal option
+    mov r2,#14          @ length of message
+    ldr r1,=message     @ message address
+    swi 0               @ Sys call with r7,#4 writes to terminal
+
+end:
+    mov r0, #1          @ return code
+    mov r7,#1           @ exit to term option
+
+    swi 0               @ system call will exit prog with r7,#1
+
+.data
+
+message:
+    .ascii  "Hello, World!\n"
 ```
