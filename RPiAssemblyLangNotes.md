@@ -104,9 +104,8 @@ _start:
     swi 0               @ Sys call with r7,#4 writes to terminal
 
 end:
-    mov r0, #1          @ return code
+    mov r0,#0           @ success return code
     mov r7,#1           @ exit to term option
-
     swi 0               @ system call will exit prog with r7,#1
 
 .data
