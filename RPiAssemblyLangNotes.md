@@ -1,6 +1,6 @@
 # Overview
 
-Assmebly Language notes for the Raspberry Pi ARM processor running the Raspbian Stretch OS
+Assembly Language notes for the Raspberry Pi ARM processor running the Raspbian Stretch OS
 
 Development here was done on a **Raspberry Pi 3** with an **BCM 2836 ARM v8** processor, which is an **SOC - System on a Chip** architecture.  It is a 1.2GHz chip with four ARM Cortex A53 cores.  It is a 64-bit processor, but it uses a 32-bit instruction set (for now anyway)
 
@@ -37,7 +37,7 @@ ld -o progname progname.o
 
 ## Link Multiple Object files 
 
-Assuming two separate source files assebled to two different object files
+Assuming two separate source files assembled to two different object files
 
 ```bash
 ld -o progname prognmain.o progmodule.o

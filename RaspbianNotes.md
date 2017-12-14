@@ -1,6 +1,6 @@
 # Overview
 
-Notes on the Raspbian OS (Strech at time of writing) for the Rasberry Pi
+Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 
 # References
 
