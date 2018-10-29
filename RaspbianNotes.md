@@ -16,7 +16,7 @@ Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 
 ## Return to the Pi on 2018-10-24
 
-Return to the Pi after almost one year, needed 325 upgraded packages.  Noted it is using **Raspian OS** which is based on **Debian Stretch** which is still current and which I currently use in a full OS VM.  Disappointed that I hardly made any notes, with nothing on my install and software configurations.  It does have **gcc** on there, which I suspect I added, since it is rarely installed by default. I will now try to starting updating them.  
+Return to the Pi after almost one year, needed 325 upgraded packages.  Noted it is using **Raspian OS** which is based on **Debian Stretch** which is still current and which I currently use in a full OS VM.  I was disappointed that I hardly made any notes, with nothing on my install and software configurations.  It does have **gcc** on there, which I suspect I added, since it is rarely installed by default. I will now try to starting updating them.  
 
 After **updates** applied, it informed me in the **UI** that some config files were changed and the old ones were backed up to **`~/oldconffiles/`** with most in the hiddent **`.config/`** subdirectory.  Didn't see anything in their I had configured.
 
