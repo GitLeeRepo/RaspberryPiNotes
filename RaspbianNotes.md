@@ -12,7 +12,89 @@ Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 * [UbuntuNotes](https://github.com/GitLeeRepo/UbuntuNotes/blob/master/UbuntuNotes.md#overview)
 * [DebianNotes](https://github.com/GitLeeRepo/DebianNotes/blob/master/DebianNotes.md#overview)
 
+# Kit Purchased
+
+* [CanaKit Raspberry Pi 3 Complete Starter Kit - 32 GB Edition](https://www.amazon.com/gp/product/B01C6Q2GSY/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
+* Purchased: 2017-11-08
+* For \$75 on Amazon
+* 32 GB Micro SD Card (Class 10) -- pre-installed with NOOBS
+
+
 # Installation/Upgrades/Configurations
+
+## Installed Raspian (Full Desktop) -- on approx 2017-11-10
+
+Installed **Raspian (Full Desktop)** from the **NOOBS** installer on the **32GB Micro SD card** included in the kit.
+
+Note this ends up being the same **SD card** mounted as the **file system** for the **Raspian installation**
+
+### Booting to NOOBS SD Card after OS Installed
+
+It says **hold down the shift key** when booting (it briefly flashes across the screen when booting).  But I found I had to **rapidly tap shift** while booting to get to the **NOOBS utility**.  Pressing **Esc** will continue to **boot to the OS**.
+
+### Selecting Boot Options from the raspi-config terminal utility
+
+Entering the **`sudo raspi-config`** command brings up a text based menu.  **Option 3** is for the **Boot Options**
+
+```bash
+sudo raspi-config
+```
+
+**Initial Menu**:
+
+```
+1 Change User Password - Change password for the current user
+2 Network Options- Configure network settings
+3 Boot Options - Configure options for start-up
+4 Localisation Options - Set up language and regional settings to match your location
+5 Interfacing Options- Configure connections to peripherals
+6 Overclock - Configure overclocking for your Pi
+7 Advanced Options - Configure advanced settings
+8 Update - Update this tool to the latest version
+9 About raspi-config - Information about this configuration tool 
+```
+
+**Boot Options**:
+
+```
+B1 Desktop / CLI - Choose whether to boot into a desktop environment or the command line
+B2 Wait for Network at Boot- Choose whether to wait for network connection during boot
+B3 Splash Screen - Choose graphical splash screen or text boot
+```
+
+**B1 Desktop / CLI**:
+
+```
+B1 Console - Text console, requiring user to login
+B2 Console Autologin - Text console, automatically logged in as 'lee' user
+B3 Desktop - Desktop GUI, requiring user to login
+B4 Desktop Autologin - Desktop GUI, automatically logged in as 'lee' user
+```
+
+### Booting to a Console (No Desktop)
+
+It acts like it is going to go into the **GUI** since a couple of graphical screens pop up, but it does go to the **command line**
+
+**Intial memory used comparison**:
+
+* **Console** -- **46.7MB out of 923MB**
+* **Deskop** -- **104MB of 923MB**
+
+Some other **coparisons**:
+
+* **odb1** -- **Debain Stretch** - **Azure** - minimum addtional sofware installs
+  * **127MB out of 1.88GB**
+* **oub1** -- **Ubuntu 18.04** - **Azure** - minimum addtional sofware installs
+  * **206MB out of 1.86GB**
+* **aub2** -- **Ubuntu 18.04** -- **Hyper-V** - **Desktop install** - **Docker running but no containers**
+  * **1.83GB out of 7.83GB** 
+* **aub3** -- **Ubuntu 18.04** -- **Hyper-V** - **Server install** - **Docker running but no containers**
+  * **1.4GB out of 3.83GB** - after closing **Docker Containers**
+  * **200MB out of 3.83GB**  - after **rebooting the system**
+* **adb1** -- **Debian Stretch** -- **Hyper-V** -- **Desktop install** -- **No Docker** -- **Gnome biggest memory user**
+  * **294MB out of 3.86GB** --  afte **rebooting the system**
+ **acn1** -- **CentOS** -- **Hyper-V** -- **Desktop install** -- **No Docker** -- **Gnome biggest memory user**
+  * **454MB out of 3.68GB** --  afte **rebooting the system**  
 
 ## Return to the Pi on 2018-10-24
 
