@@ -96,6 +96,20 @@ Some other **coparisons**:
  **acn1** -- **CentOS** -- **Hyper-V** -- **Desktop install** -- **No Docker** -- **Gnome biggest memory user**
   * **454MB out of 3.68GB** --  afte **rebooting the system**  
 
+## Rasbian Stretch Lite Install 2018-11-01
+
+### Started with
+
+*  [**Sandisk Ultra 32GB Micro SD Card**](https://www.amazon.com/gp/product/B073JWXGNT/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* **2018-10-09-raspbian-stretch-lite.img** file downloaded from [Raspbian Stretch download page](https://www.raspberrypi.org/downloads/raspbian/)
+
+### Installed Etcher on my laptop
+
+* **Downloaded Etcher** from [www.balena.io](https://www.balena.io/etcher/)
+* Its a simple three step **flash** process
+  * **Select** the **.img file**
+  * **Insert Micro SD card** using an **adapter** to full sized SD card (comes with [**Sandisk Ultra 32GB Micro SD Card**](https://www.amazon.com/gp/product/B073JWXGNT/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+
 ## Return to the Pi on 2018-10-24
 
 Return to the Pi after almost one year, needed 325 upgraded packages.  Noted it is using **Raspian OS** which is based on **Debian Stretch** which is still current and which I currently use in a full OS VM.  I was disappointed that I hardly made any notes, with nothing on my install and software configurations.  It does have **gcc** on there, which I suspect I added, since it is rarely installed by default. I will now try to starting updating them.  
