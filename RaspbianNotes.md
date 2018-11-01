@@ -26,14 +26,14 @@ Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 
 ### Raspberry Pi and SDXC cards
 
-The **Raspberry Pi's bootloader**, built into the GPU and non-updateable, **only has support for reading from FAT filesystems** (both **FAT16** and **FAT32**), and is **unable to boot from an exFAT filesystem**. So if you want to use NOOBS on a card that is **64GB or larger**, you need to **reformat it as FAT32** first **before copying the NOOBS files** to it.
+The **Raspberry Pi's boot loader**, built into the GPU and non-updatable, **only has support for reading from FAT file systems** (both **FAT16** and **FAT32**), and is **unable to boot from an exFAT filesystem**. So if you want to use NOOBS on a card that is **64GB or larger**, you need to **reformat it as FAT32** first **before copying the NOOBS files** to it.
 
 
-## Installed Raspian (Full Desktop) -- on approx 2017-11-10
+## Installed Raspbian (Full Desktop) -- on approx 2017-11-10
 
-Installed **Raspian (Full Desktop)** from the **NOOBS** installer on the **32GB Micro SD card** included in the kit.
+Installed **Raspbian (Full Desktop)** from the **NOOBS** installer on the **32GB Micro SD card** included in the kit.
 
-Note this ends up being the same **SD card** mounted as the **file system** for the **Raspian installation**
+Note this ends up being the same **SD card** mounted as the **file system** for the **Raspbian installation**
 
 ### Booting to NOOBS SD Card after OS Installed
 
@@ -53,7 +53,7 @@ sudo raspi-config
 1 Change User Password - Change password for the current user
 2 Network Options- Configure network settings
 3 Boot Options - Configure options for start-up
-4 Localisation Options - Set up language and regional settings to match your location
+4 Localization Options - Set up language and regional settings to match your location
 5 Interfacing Options- Configure connections to peripherals
 6 Overclock - Configure overclocking for your Pi
 7 Advanced Options - Configure advanced settings
@@ -82,16 +82,16 @@ B4 Desktop Autologin - Desktop GUI, automatically logged in as 'lee' user
 
 It acts like it is going to go into the **GUI** since a couple of graphical screens pop up, but it does go to the **command line**
 
-**Intial memory used comparison**:
+**Initial memory used comparison**:
 
 * **Console** -- **46.7MB out of 923MB**
-* **Deskop** -- **104MB of 923MB**
+* **Desktop** -- **104MB of 923MB**
 
-Some other **coparisons**:
+Some other **comparisons**:
 
-* **odb1** -- **Debain Stretch** - **Azure** - minimum addtional sofware installs
+* **odb1** -- **Debian Stretch** - **Azure** - minimum additional software installs
   * **127MB out of 1.88GB**
-* **oub1** -- **Ubuntu 18.04** - **Azure** - minimum addtional sofware installs
+* **oub1** -- **Ubuntu 18.04** - **Azure** - minimum additional software installs
   * **206MB out of 1.86GB**
 * **aub2** -- **Ubuntu 18.04** -- **Hyper-V** - **Desktop install** - **Docker running but no containers**
   * **1.83GB out of 7.83GB** 
@@ -99,11 +99,11 @@ Some other **coparisons**:
   * **1.4GB out of 3.83GB** - after closing **Docker Containers**
   * **200MB out of 3.83GB**  - after **rebooting the system**
 * **adb1** -- **Debian Stretch** -- **Hyper-V** -- **Desktop install** -- **No Docker** -- **Gnome biggest memory user**
-  * **294MB out of 3.86GB** --  afte **rebooting the system**
+  * **294MB out of 3.86GB** --  after **rebooting the system**
  **acn1** -- **CentOS** -- **Hyper-V** -- **Desktop install** -- **No Docker** -- **Gnome biggest memory user**
-  * **454MB out of 3.68GB** --  afte **rebooting the system**  
+  * **454MB out of 3.68GB** --  after **rebooting the system**  
 
-## Rasbian Stretch Lite Install 2018-11-01
+## Raspbian Stretch Lite Install 2018-11-01
 
 ### Started with
 
@@ -119,9 +119,9 @@ Some other **coparisons**:
 
 ## Return to the Pi on 2018-10-24
 
-Return to the Pi after almost one year, needed 325 upgraded packages.  Noted it is using **Raspian OS** which is based on **Debian Stretch** which is still current and which I currently use in a full OS VM.  I was disappointed that I hardly made any notes, with nothing on my install and software configurations.  It does have **gcc** on there, which I suspect I added, since it is rarely installed by default. I will now try to starting updating them.  
+Return to the Pi after almost one year, needed 325 upgraded packages.  Noted it is using **Raspbian OS** which is based on **Debian Stretch** which is still current and which I currently use in a full OS VM.  I was disappointed that I hardly made any notes, with nothing on my install and software configurations.  It does have **gcc** on there, which I suspect I added, since it is rarely installed by default. I will now try to starting updating them.  
 
-After **updates** applied, it informed me in the **UI** that some config files were changed and the old ones were backed up to **`~/oldconffiles/`** with most in the hiddent **`.config/`** subdirectory.  Didn't see anything in their I had configured.
+After **updates** applied, it informed me in the **UI** that some config files were changed and the old ones were backed up to **`~/oldconffiles/`** with most in the hidden **`.config/`** subdirectory.  Didn't see anything in their I had configured.
 
 ## Software Installs
 
