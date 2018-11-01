@@ -22,6 +22,13 @@ Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 
 # Installation/Upgrades/Configurations
 
+## Micro SD Card Supported Formats
+
+### Raspberry Pi and SDXC cards
+
+The **Raspberry Pi's bootloader**, built into the GPU and non-updateable, **only has support for reading from FAT filesystems** (both **FAT16** and **FAT32**), and is **unable to boot from an exFAT filesystem**. So if you want to use NOOBS on a card that is **64GB or larger**, you need to **reformat it as FAT32** first **before copying the NOOBS files** to it.
+
+
 ## Installed Raspian (Full Desktop) -- on approx 2017-11-10
 
 Installed **Raspian (Full Desktop)** from the **NOOBS** installer on the **32GB Micro SD card** included in the kit.
