@@ -114,8 +114,18 @@ Some other **comparisons**:
 
 * **Downloaded Etcher** from [www.balena.io](https://www.balena.io/etcher/)
 * Its a simple three step **flash** process
-  * **Select** the **.img file**
+  * **Select** the **.img file** -- using the **2018-10-09-raspbian-stretch-lite.img**
   * **Insert Micro SD card** using an **adapter** to full sized SD card (comes with [**Sandisk Ultra 32GB Micro SD Card**](https://www.amazon.com/gp/product/B073JWXGNT/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+  * **Flash** the card -- straight forward but relatively slow process (probably 1.5 to 2 minutes to do the 32GB)
+
+### Install on Pi
+
+* Power down Pi
+* **Remove the old Micro SD** card.  It is kind of hard to see, but the back of the case has a small notch, where the **micro sd** card is.  You need a good light to see it.
+* **Insert new Micro SD** card.
+* **Power on and let it boot**.  Nothing really to do, just wait for the command prompt.  Default login is **pi** with password **raspberry**.
+* Type **passwd** to **change the password**
+* Assign any **users** you want to use (refer to Linux/Debian docs).
 
 ## Return to the Pi on 2018-10-24
 
