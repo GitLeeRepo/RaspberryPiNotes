@@ -127,6 +127,34 @@ Some other **comparisons**:
 * Type **passwd** to **change the password**
 * Assign any **users** you want to use (refer to Linux/Debian docs).
 
+### Network connectivity
+
+Initially there was **no network configuration**.  Both **etho0** and **wlan0** were down.  **etho0** was down because I didn't have a cable connected, and **wlan0** was down since I had never gone through a **set up** for **WiFi**.  When I plugged in the **Ethernet** **etho0** automatically came up and I got an **ip** from my **DHCP** server.  To configure the **WiFi** do the following:
+
+```bash
+$ sudo raspi-config
+# menu:
+#  2 Network Options -- Configure network settings
+# N2 Wi-fi    Enter SSID and passphrase
+```
+
+The **wlan0** automtically changed to an **up** state
+
+### SSH connectivity
+
+Initially there was no **ssh connectivity** and uncommenting **PubkeyAuthentication yes** in the **/etc/ssh/sshd_config** did not allow access, and the **openssh-server** was installed.  I had to fix this in the **raspi-config**:
+
+```bash
+$ sudo raspi-config
+# menu
+# 5 Interfacing Options -- Configure connections to peripherals
+# P2 SSH -- Enable/Disable remote command line access to your Pi using SSH
+# Enable
+```
+# Localization and Timezone
+
+I had to change the **Localization** settings in **raspi-config** since they were set to **UK**.  The **keyboard** is still a bit funky at the **terminal**, but is fine through **ssh terminals**.  I need to set this in **localization** also, but haven't done it yet.  I also set the correct **timezone** info while in **raspi-config**.
+
 ## Return to the Pi on 2018-10-24
 
 Return to the Pi after almost one year, needed 325 upgraded packages.  Noted it is using **Raspbian OS** which is based on **Debian Stretch** which is still current and which I currently use in a full OS VM.  I was disappointed that I hardly made any notes, with nothing on my install and software configurations.  It does have **gcc** on there, which I suspect I added, since it is rarely installed by default. I will now try to starting updating them.  
