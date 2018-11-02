@@ -82,10 +82,14 @@ B4 Desktop Autologin - Desktop GUI, automatically logged in as 'lee' user
 
 It acts like it is going to go into the **GUI** since a couple of graphical screens pop up, but it does go to the **command line**
 
-**Initial memory used comparison**:
+**Initial memory used comparison on Rasbian Stretch Desktop**:
 
-* **Console** -- **46.7MB out of 923MB**
+* **Console only** -- **46.7MB out of 923MB**
 * **Desktop** -- **104MB of 923MB**
+
+The **Raspbian Strech Lite*:
+
+* **Console** -- **36.3MB out of 927MB**
 
 Some other **comparisons**:
 
