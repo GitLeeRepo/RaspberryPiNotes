@@ -8,7 +8,7 @@ Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 
 ## My Other Notes
 
-* [LinuxSecurityNotes](https://github.com/GitLeeRepo/LinuxSecurityNotes/blob/master/LinuxSecurityNotes.md#overview)
+* [LinuxSecurityNotes](https://github.com/GitLeeRepo/SecurityNotes/blob/master/LinuxSecurityNotes.md#overview)
 * [UbuntuNotes](https://github.com/GitLeeRepo/UbuntuNotes/blob/master/UbuntuNotes.md#overview)
 * [DebianNotes](https://github.com/GitLeeRepo/DebianNotes/blob/master/DebianNotes.md#overview)
 
