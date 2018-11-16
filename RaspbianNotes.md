@@ -19,6 +19,20 @@ Notes on the Raspbian OS (Stretch at time of writing) for the Raspberry Pi
 * For \$75 on Amazon
 * 32 GB Micro SD Card (Class 10) -- pre-installed with NOOBS
 
+# Specifications
+
+## Raspberry Pi 3 Model B
+
+* 1 GB RAM Shared with GPU
+* 4× Cortex-A53 1.2 GHz (3+ released 2018 is 1.4GHz)
+* 4 USB 2.0 Ports
+* HDMI Output
+* 3.5 mm Audio Jack
+* MicroSDHC slot
+* 10/100 Mbit/s Ethernet
+* 802.11b/g/n single band 2.4 GHz wireless
+* Bluetooth 4.1 BLE
+
 
 # Installation/Upgrades/Configurations
 
@@ -82,12 +96,12 @@ B4 Desktop Autologin - Desktop GUI, automatically logged in as 'lee' user
 
 It acts like it is going to go into the **GUI** since a couple of graphical screens pop up, but it does go to the **command line**
 
-**Initial memory used comparison on Rasbian Stretch Desktop**:
+**Initial memory used comparison on Raspbian Stretch Desktop**:
 
 * **Console only** -- **46.7MB out of 923MB**
 * **Desktop** -- **104MB of 923MB**
 
-The **Raspbian Strech Lite*:
+The **Raspbian Stretch Lite*:
 
 * **Console** -- **36.3MB out of 927MB**
 
@@ -133,7 +147,7 @@ Some other **comparisons**:
 
 ### Network connectivity
 
-Initially there was **no network configuration**.  Both **etho0** and **wlan0** were down.  **etho0** was down because I didn't have a cable connected, and **wlan0** was down since I had never gone through a **set up** for **WiFi**.  When I plugged in the **Ethernet** **etho0** automatically came up and I got an **ip** from my **DHCP** server.  To configure the **WiFi** do the following:
+Initially there was **no network configuration**.  Both **eth0** and **wlan0** were down.  **eth0** was down because I didn't have a cable connected, and **wlan0** was down since I had never gone through a **set up** for **WiFi**.  When I plugged in the **Ethernet** **eth0** automatically came up and I got an **ip** from my **DHCP** server.  To configure the **WiFi** do the following:
 
 ```bash
 $ sudo raspi-config
@@ -142,11 +156,11 @@ $ sudo raspi-config
 # N2 Wi-fi    Enter SSID and passphrase
 ```
 
-The **wlan0** automtically changed to an **up** state
+The **wlan0** automatically changed to an **up** state
 
 ### SSH connectivity
 
-Initially there was no **ssh connectivity** and uncommenting **PubkeyAuthentication yes** in the **/etc/ssh/sshd_config** did not allow access, and the **openssh-server** was installed.  I had to fix this in the **raspi-config**:
+Initially there was no **ssh connectivity** and un-commenting **PubkeyAuthentication yes** in the **/etc/ssh/sshd_config** did not allow access, and the **openssh-server** was installed.  I had to fix this in the **raspi-config**:
 
 ```bash
 $ sudo raspi-config

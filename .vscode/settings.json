@@ -5,6 +5,8 @@
         "cpsr",
         "oldconffiles",
         "progmodule",
-        "prognmain"
+        "prognmain",
+        "ssid",
+        "sysvinit"
     ]
 }
